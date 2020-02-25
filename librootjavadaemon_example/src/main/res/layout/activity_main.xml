@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
@@ -14,9 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:onClick="onLaunchDaemonClick"
-        android:text="Launch Daemon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:text="Launch Daemon"/>
 
     <Button
         android:id="@+id/buttonKillDaemon"
@@ -25,9 +23,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:onClick="onKillDaemonClick"
-        android:text="Kill Daemon"
-        app:layout_constraintStart_toEndOf="@id/buttonLaunchDaemon"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:text="Kill Daemon"/>
 
     <Button
         android:id="@+id/buttonKillUI"
@@ -36,9 +32,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:onClick="onKillUIClick"
-        android:text="Kill UI"
-        app:layout_constraintStart_toEndOf="@id/buttonKillDaemon"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:text="Kill UI"/>
 
     <TextView
         android:id="@+id/textView"
@@ -51,10 +45,6 @@
         android:gravity="bottom"
         android:scrollHorizontally="true"
         android:text=""
-        android:scrollbars="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:scrollbars="vertical"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
