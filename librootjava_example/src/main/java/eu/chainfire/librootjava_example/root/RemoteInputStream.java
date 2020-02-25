@@ -16,7 +16,7 @@
 package eu.chainfire.librootjava_example.root;
 
 import android.os.RemoteException;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
