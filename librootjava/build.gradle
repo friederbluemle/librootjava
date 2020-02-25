@@ -3,8 +3,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
     defaultConfig {
         minSdkVersion 21 /* was 14 pre-Binder/AIDL */
         targetSdkVersion 26
